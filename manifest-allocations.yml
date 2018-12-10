@@ -2,10 +2,10 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-kri-sun.api.sys.pcf.paltraining.perficient.com
+  - route: allocations-pal-kri-sun.apps.pcf.paltraining.perficient.com
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://allocations-pal-kri-sun.api.sys.pcf.paltraining.perficient.com
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-kri-sun.apps.pcf.paltraining.perficient.com
   services:
   - tracker-allocations-database
